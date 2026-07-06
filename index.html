@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Boletim Estratégico 2º Semestre 2026 — Steakhouses no Brasil · Nyssa</title>
+<meta name="description" content="A arroba na máxima da década encontra o consumidor que voltou a sair para comer. Dados, calendário de oportunidade e diagnóstico para donos de steakhouse.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --black:#17130F;
+  --black-soft:#221C15;
+  --bone:#F5EFE1;
+  --bone-dim:#E9E0C9;
+  --ember:#C1421C;
+  --ember-dark:#9C3315;
+  --brass:#B8923D;
+  --gray:#7A7263;
+  --line:#E4DAC0;
+  --line-dark:rgba(245,239,225,.12);
+  --shadow:0 20px 48px -20px rgba(23,19,15,.35);
+  --shadow-sm:0 8px 24px -12px rgba(23,19,15,.25);
+  --r:20px;
+  --display:'Fraunces',serif;
+  --body:'Inter',sans-serif;
+  --mono:'IBM Plex Mono',monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+body{font-family:var(--body);background:var(--bone);color:var(--black);line-height:1.62;font-size:16.5px;-webkit-font-smoothing:antialiased}
+::selection{background:var(--brass);color:var(--black)}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--ember);outline-offset:3px}
+.wrap{max-width:1100px;margin:0 auto;padding:0 24px}
+section{padding:92px 0}
+h2{font-family:var(--display);font-weight:700;letter-spacing:-.02em;font-size:clamp(1.9rem,4vw,2.7rem);line-height:1.14}
+.sec-head{max-width:660px;margin:0 auto 52px;text-align:center}
+.sec-head p{margin-top:16px;color:var(--gray);font-size:1.04rem}
+.eyebrow{font-family:var(--mono);font-size:.72rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ember-dark);display:inline-flex;align-items:center;gap:8px;margin-bottom:16px}
+.eyebrow::before{content:"";width:16px;height:1px;background:var(--ember)}
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+
+#prog{position:fixed;top:0;left:0;height:3px;width:0%;z-index:110;background:linear-gradient(90deg,var(--ember),var(--brass));transition:width .08s linear}
+
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(245,239,225,.9);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:14px 28px;gap:16px}
+.logo{font-family:var(--display);font-weight:700;font-size:1.15rem;letter-spacing:-.01em}
+.logo em{font-style:normal;color:var(--ember)}
+.nav-links{display:flex;gap:2px}
+.nav-links a{font-size:.83rem;font-weight:500;color:var(--gray);padding:8px 12px;border-radius:8px;transition:color .2s,background .2s;white-space:nowrap}
+.nav-links a:hover,.nav-links a.active{color:var(--black);background:var(--bone-dim)}
+@media(max-width:820px){.nav-links{display:none}}
+.btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--display);font-weight:600;font-size:.92rem;padding:13px 24px;border-radius:999px;border:1.5px solid transparent;transition:transform .18s,box-shadow .18s,background .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:var(--ember);color:var(--bone);box-shadow:0 10px 26px -8px rgba(193,66,28,.5)}
+.btn-primary:hover{background:var(--ember-dark)}
+.btn-ghost{border-color:var(--black);color:var(--black)}
+.btn-ghost:hover{background:var(--black);color:var(--bone)}
+nav .btn{padding:10px 18px;font-size:.82rem}
+
+.hero{padding:150px 0 80px;text-align:center;position:relative;background:radial-gradient(760px 420px at 80% -8%,rgba(184,146,61,.16),transparent 65%),radial-gradient(760px 460px at 15% 0%,rgba(193,66,28,.1),transparent 62%),var(--bone)}
+.hero h1{font-family:var(--display);font-weight:800;letter-spacing:-.025em;font-size:clamp(2.2rem,5.4vw,3.8rem);line-height:1.08;max-width:19ch;margin:0 auto}
+.hero h1 em{font-style:normal;color:var(--ember)}
+.hero .dek{margin:22px auto 0;max-width:580px;color:var(--gray);font-size:1.1rem}
+.hero-ctas{margin-top:34px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+
+.kpi-strip{background:var(--black);padding:44px 28px}
+.kpi-head{max-width:900px;margin:0 auto 26px}
+.kpi-eyebrow{font-family:var(--mono);font-size:.62rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--brass)}
+.kpi-title{font-family:var(--display);font-weight:700;font-size:clamp(1.2rem,2.6vw,1.55rem);color:var(--bone);margin-top:6px;line-height:1.25}
+.kpi-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;max-width:900px;margin:0 auto;background:var(--line-dark);border-radius:16px;overflow:hidden}
+.kpi-cell{background:var(--black-soft);padding:26px 22px}
+.kpi-num{font-family:var(--mono);font-weight:600;font-size:clamp(1.5rem,2.8vw,2rem);color:var(--ember);letter-spacing:-.01em}
+.kpi-cap{margin-top:8px;font-size:.82rem;color:#C9BFA9;line-height:1.4}
+@media(max-width:820px){.kpi-grid{grid-template-columns:1fr 1fr}}
+
+.confronto{display:grid;grid-template-columns:1fr 1fr;border-radius:var(--r);overflow:hidden;margin-bottom:20px;box-shadow:0 24px 52px -20px rgba(23,19,15,.5)}
+.cfr-side{padding:42px 36px}
+.cfr-side.threat{background:var(--black);color:var(--bone)}
+.cfr-side.chance{background:linear-gradient(150deg,#D4531F,var(--ember-dark));color:var(--bone)}
+.cfr-tag{font-family:var(--mono);font-size:.64rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;opacity:.6;display:block;margin-bottom:14px}
+.cfr-num{font-family:var(--display);font-weight:800;font-size:clamp(2.2rem,5.2vw,3.2rem);letter-spacing:-.02em;margin-bottom:12px}
+.cfr-desc{font-size:.95rem;line-height:1.6;opacity:.88}
+.cfr-desc strong{opacity:1;font-weight:700}
+@media(max-width:720px){.confronto{grid-template-columns:1fr}}
+
+.detail-card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:36px 34px;margin-bottom:20px;box-shadow:var(--shadow-sm);display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:center}
+.detail-card h3{font-family:var(--display);font-weight:700;font-size:1.24rem;letter-spacing:-.01em;margin:6px 0 10px}
+.detail-card p{color:var(--gray);font-size:.93rem}
+.board{background:var(--black);border-radius:16px;padding:20px 22px;color:var(--bone)}
+.board .row{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px dashed var(--line-dark);font-family:var(--mono);font-size:.86rem}
+.board .row:last-child{border-bottom:none}
+.board .row b{color:var(--brass);font-weight:600}
+.board .note{display:block;margin-top:8px;font-size:.68rem;color:#9C9280;font-family:var(--body)}
+@media(max-width:720px){.detail-card{grid-template-columns:1fr;padding:26px 22px}}
+
+.calendar-sec{background:var(--bone-dim);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.cal-tabs{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;max-width:860px;margin:0 auto}
+.cal-btn{background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px 10px;text-align:center;box-shadow:var(--shadow-sm);transition:transform .18s,border-color .2s}
+.cal-btn b{font-family:var(--display);font-weight:700;font-size:.96rem;display:block}
+.cal-btn small{font-size:.7rem;color:var(--gray)}
+.cal-btn[aria-selected="true"]{border-color:var(--ember)}
+.cal-panel{max-width:860px;margin:24px auto 0;background:#fff;border:1px solid var(--line);border-radius:24px;padding:36px 34px;box-shadow:var(--shadow);min-height:210px;transition:opacity .2s}
+.cal-panel .status{display:inline-block;font-family:var(--mono);font-size:.68rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:6px 14px;border-radius:999px;margin-bottom:14px;color:var(--bone)}
+.cal-panel h4{font-family:var(--display);font-weight:800;font-size:1.4rem;margin-bottom:10px}
+.cal-panel p{color:var(--gray);font-size:.96rem}
+.cal-panel .acao{margin-top:18px;padding:14px 18px;background:var(--bone-dim);border-radius:12px;font-size:.92rem}
+.cal-panel .acao b{display:block;font-family:var(--mono);font-size:.66rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ember-dark);margin-bottom:5px}
+@media(max-width:680px){.cal-tabs{grid-template-columns:1fr 1fr}}
+
+.price-card{max-width:740px;margin:0 auto;background:#fff;border:1px solid var(--line);border-radius:24px;padding:38px 36px;box-shadow:var(--shadow)}
+.price-stops{display:flex;justify-content:space-between;font-family:var(--mono);font-size:.78rem;font-weight:600;margin-bottom:10px;color:#B4AB96}
+.price-stops span.on{color:var(--ember)}
+input[type=range]{width:100%;appearance:none;height:8px;border-radius:4px;background:linear-gradient(90deg,var(--brass),var(--ember))}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:26px;height:26px;border-radius:50%;background:var(--black);border:4px solid var(--bone);box-shadow:0 4px 12px rgba(0,0,0,.3);cursor:grab}
+input[type=range]::-moz-range-thumb{width:22px;height:22px;border-radius:50%;background:var(--black);border:4px solid var(--bone);cursor:grab}
+.price-out{margin-top:28px;display:grid;grid-template-columns:1fr 1fr;gap:16px;text-align:center}
+.price-out .cell{padding:20px 10px;background:var(--bone-dim);border-radius:16px}
+.price-out .big{font-family:var(--mono);font-weight:600;font-size:clamp(1.7rem,4.4vw,2.4rem);color:var(--ember);transition:opacity .15s}
+.price-out .cap{font-size:.72rem;color:var(--gray);margin-top:6px}
+.price-msg{margin-top:20px;font-size:.94rem;padding:16px 20px;background:var(--black);color:var(--bone);border-radius:14px}
+
+.faq-item{border-bottom:1px solid var(--line)}
+.faq-q{width:100%;text-align:left;background:none;border:none;padding:20px 0;font-family:var(--display);font-weight:600;font-size:1.02rem;display:flex;justify-content:space-between;gap:16px}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease}
+.faq-a p{padding-bottom:20px;color:var(--gray);font-size:.94rem;line-height:1.6}
+.chev{font-family:var(--mono);color:var(--ember);flex-shrink:0}
+
+.check-item{display:flex;gap:14px;align-items:flex-start;padding:14px 0;border-bottom:1px solid var(--line);cursor:pointer}
+.check-item input{width:22px;height:22px;flex-shrink:0;margin-top:2px;appearance:none;border:2px solid var(--gray);border-radius:6px;position:relative;cursor:pointer}
+.check-item input:checked{background:var(--ember);border-color:var(--ember)}
+.check-item input:checked::before{content:"✓";position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:var(--bone);font-size:.8rem}
+.check-item span{font-size:.95rem;line-height:1.55}
+.diag-result{max-width:740px;margin:26px auto 0;background:var(--black);color:var(--bone);border-radius:24px;padding:34px 32px;box-shadow:var(--shadow)}
+.diag-score{font-family:var(--display);font-weight:800;font-size:clamp(1.4rem,3.6vw,1.9rem)}
+.diag-score em{font-style:normal;color:var(--brass)}
+.diag-result p{margin-top:10px;color:#C9BFA9;font-size:.95rem}
+.diag-meter{height:9px;background:var(--black-soft);border-radius:5px;margin-top:20px;overflow:hidden}
+.diag-meter div{height:100%;width:0;background:linear-gradient(90deg,var(--ember),var(--brass));transition:width .5s cubic-bezier(.2,.7,.2,1)}
+
+.proof{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:28px 0 0}
+.proof-cell{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px;text-align:center;box-shadow:var(--shadow-sm)}
+.proof-num{font-family:var(--display);font-weight:800;font-size:1.5rem;color:var(--ember)}
+.proof-cap{font-size:.78rem;color:var(--gray);margin-top:6px}
+@media(max-width:720px){.proof{grid-template-columns:1fr}}
+
+.cta{background:var(--black);color:var(--bone);text-align:center;border-radius:32px;max-width:1100px;margin:0 auto;padding:80px 24px;position:relative;overflow:hidden}
+.cta::before{content:"";position:absolute;inset:-30% -10% auto;height:80%;background:radial-gradient(ellipse at 50% 0%,rgba(193,66,28,.45),rgba(184,146,61,.15) 45%,transparent 72%);pointer-events:none}
+.cta>*{position:relative}
+.cta h2{color:var(--bone);max-width:20ch;margin:0 auto}
+.cta h2 em{font-style:normal;color:var(--brass)}
+.cta p{color:#C9BFA9;max-width:540px;margin:18px auto 0;font-size:1.02rem}
+.cta .hero-ctas{margin-top:32px}
+.cta .btn-ghost{border-color:#4A4038;color:var(--bone)}
+.cta .btn-ghost:hover{background:var(--bone);color:var(--black)}
+
+footer{padding:56px 0 32px;border-top:1px solid var(--line)}
+.foot-logo{font-family:var(--display);font-weight:700;font-size:1.2rem}
+.foot-logo em{font-style:normal;color:var(--ember)}
+footer p{color:var(--gray);font-size:.85rem;margin-top:10px;max-width:440px}
+.foot-bottom{margin-top:30px;font-size:.72rem;color:#A79C88;line-height:1.7}
+
+.fab-top{position:fixed;bottom:24px;right:24px;width:46px;height:46px;border-radius:50%;background:var(--black);color:var(--bone);border:none;font-size:1.1rem;opacity:0;pointer-events:none;transition:opacity .25s,transform .18s;z-index:90}
+.fab-top.show{opacity:1;pointer-events:auto}
+.fab-top:hover{background:var(--ember);transform:translateY(-2px)}
+</style>
+</head>
+<body>
+<div id="prog"></div>
+<nav id="mainNav">
+  <a class="logo" href="#topo">nyssa<em>✦</em></a>
+  <div class="nav-links">
+    <a href="#cenario">Cenário</a>
+    <a href="#calendario">Calendário</a>
+    <a href="#custo">Custo de esperar</a>
+    <a href="#diagnostico">Diagnóstico</a>
+  </div>
+  <a class="btn btn-primary" href="#acao">Falar com a Nyssa</a>
+</nav>
+
+<header class="hero" id="topo">
+  <div class="wrap">
+    <span class="eyebrow">Boletim Estratégico · Steakhouses · 2º Semestre 2026</span>
+    <h1>A arroba nunca esteve tão cara. O brasileiro nunca quis tanto <em>sair para comer</em>.</h1>
+    <p class="dek">Custo da proteína na máxima da década, consumo fora do lar liderando o varejo e um calendário de fim de ano que decide sua margem. Veja os números, o que fazer com eles — e o que os seus concorrentes ainda não estão fazendo.</p>
+    <div class="hero-ctas">
+      <a class="btn btn-primary" href="#cenario">Ver o cenário completo</a>
+      <a class="btn btn-ghost" href="#diagnostico">Fazer autodiagnóstico</a>
+    </div>
+  </div>
+</header>
+
+<div class="kpi-strip">
+  <div class="kpi-head">
+    <span class="kpi-eyebrow">Sumário · 2026</span>
+    <div class="kpi-title">O que está pressionando — e o que está puxando — a sua margem agora</div>
+  </div>
+  <div class="kpi-grid">
+    <div class="kpi-cell"><div class="kpi-num">+4,6%</div><div class="kpi-cap">alta real da arroba no 1º semestre de 2026 frente a janeiro (CEPEA/ESALQ)</div></div>
+    <div class="kpi-cell"><div class="kpi-num">R$495 bi</div><div class="kpi-cap">faturamento do setor em 2025, alta de 8,8% sobre 2024 (Abrasel)</div></div>
+    <div class="kpi-cell"><div class="kpi-num">+10,1%</div><div class="kpi-cap">crescimento de restaurantes no varejo no 1º tri/2026 — líder entre 10 segmentos</div></div>
+    <div class="kpi-cell"><div class="kpi-num">32%</div><div class="kpi-cap">dos empresários não conseguiram repassar a inflação ao cardápio nos últimos 12 meses</div></div>
+  </div>
+</div>
+
+<section id="cenario">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">O cenário em números</span>
+      <h2>Sua carne está mais cara. Seu cliente está mais disposto a pagar por ela — se souber por quê.</h2>
+      <p>Dois movimentos estruturais definem o semestre: o custo da proteína bovina subindo por razões que não vão desaparecer, e a retomada do consumo fora do lar, puxada por quem trocou frequência por qualidade. Steakhouse vive exatamente na interseção dos dois.</p>
+    </div>
+
+    <div class="confronto reveal">
+      <div class="cfr-side threat">
+        <span class="cfr-tag">A pressão · custo estrutural</span>
+        <div class="cfr-num">R$347,59</div>
+        <p class="cfr-desc">foi a média à vista da arroba (CEPEA/ESALQ-SP) no fechamento do 1º semestre de 2026 — <strong>alta real de 4,6%</strong> frente a janeiro. O pico do semestre veio em abril, a R$365,93 em termos reais. A causa não é sazonal: é <strong>demanda chinesa aquecida</strong>, oferta interna mais restrita e um ano eleitoral historicamente favorável à circulação de dinheiro. Analistas do setor já projetam a arroba entre R$370 e R$400 no 2º semestre.</p>
+      </div>
+      <div class="cfr-side chance">
+        <span class="cfr-tag">A oportunidade · demanda em recuperação</span>
+        <div class="cfr-num">+10,1%</div>
+        <p class="cfr-desc">foi o crescimento de restaurantes no varejo brasileiro no 1º trimestre de 2026 — o <strong>maior entre os dez segmentos</strong> analisados, à frente de farmácias e hospedagem. O consumidor não está saindo com a mesma frequência de antes, mas quando sai, gasta mais e espera mais. É exatamente o comportamento que sustenta uma steakhouse bem posicionada.</p>
+      </div>
+    </div>
+
+    <div class="detail-card reveal">
+      <div>
+        <span class="eyebrow" style="margin-bottom:6px">Ficha de preço · 03/07/2026</span>
+        <h3>O boi está caro em todo lugar — mas não igual</h3>
+        <p>A cotação varia por praça, e essa variação já é argumento de negociação com fornecedor e de precificação de cardápio por região. O que não varia é a tendência: viés de alta para o segundo semestre, puxado por exportação recorde e oferta mais restrita de animais terminados.</p>
+      </div>
+      <div class="board">
+        <div class="row"><span>São Paulo</span><b>R$ 330/@</b></div>
+        <div class="row"><span>Minas Gerais</span><b>R$ 308/@</b></div>
+        <div class="row"><span>Mato Grosso</span><b>R$ 322/@</b></div>
+        <div class="row"><span>Goiás</span><b>R$ 317/@</b></div>
+        <div class="row"><span>Mato Grosso do Sul</span><b>R$ 327/@</b></div>
+        <div class="row"><span>Rio de Janeiro</span><b>R$ 327/@</b></div>
+        <span class="note">Fonte: Pecuaria.com.br / Datagro · cotação de 03/07/2026</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="calendar-sec" id="calendario">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">O calendário do 2º semestre</span>
+      <h2>Julho não é o problema. Dezembro é a prova.</h2>
+      <p>Copa, feriados prolongados e eleições — 2026 tem nove feriados nacionais e dez pontos facultativos, a maioria emendável. Cada mês pede um movimento comercial diferente. Toque em cada um:</p>
+    </div>
+    <div class="cal-tabs reveal" role="tablist" aria-label="Meses do semestre">
+      <button class="cal-btn" role="tab" aria-selected="true" data-m="0"><b>Jul–Ago</b><small>Copa termina</small></button>
+      <button class="cal-btn" role="tab" aria-selected="false" data-m="1"><b>Set–Out</b><small>Feriados + eleições</small></button>
+      <button class="cal-btn" role="tab" aria-selected="false" data-m="2"><b>Novembro</b><small>Aquecimento</small></button>
+      <button class="cal-btn" role="tab" aria-selected="false" data-m="3"><b>Dezembro</b><small>Pico do ano</small></button>
+    </div>
+    <div class="cal-panel reveal" id="calPanel" role="tabpanel" aria-live="polite"></div>
+  </div>
+</section>
+
+<section id="custo">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">O custo de não reprecificar</span>
+      <h2>Cada mês que seu cardápio não acompanha o boi, sua margem paga a conta</h2>
+      <p>32% dos donos de restaurante não conseguiram repassar a inflação ao cardápio no último ano. Arraste e veja o que a arroba fez em 2026 — e o que ela deve fazer no 2º semestre.</p>
+    </div>
+    <div class="price-card reveal">
+      <div class="price-stops" id="priceStops">
+        <span class="on">Jan/26</span><span>Abr/26</span><span>Jun/26</span><span>2S/26 (proj.)</span>
+      </div>
+      <input type="range" id="priceRange" min="0" max="3" step="1" value="0" aria-label="Momento do semestre">
+      <div class="price-out">
+        <div class="cell"><div class="big" id="priceVal">R$332</div><div class="cap" id="priceCap">média real da arroba</div></div>
+        <div class="cell"><div class="big" id="priceVar">base</div><div class="cap">variação frente a janeiro</div></div>
+      </div>
+      <div class="price-msg" id="priceMsg"></div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">O que todo dono de steakhouse está perguntando</span>
+      <h2>Dúvidas? Os dados respondem.</h2>
+    </div>
+    <div class="faq reveal">
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">A Copa atrapalhou meu movimento em julho?<span class="chev">+</span></button>
+        <div class="faq-a"><p>Bares com telão sentiram alta em dias de jogo — mas o jantar de ocasião, o tipo de mesa que sustenta uma steakhouse, tende a ser adiado durante o torneio. O erro é tirar o pé do comercial em julho. O movimento certo é usar o período para planejar a campanha de agosto, quando a atenção volta inteira.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Vale a pena investir em marketing com a arroba tão cara?<span class="chev">+</span></button>
+        <div class="faq-a"><p>Vale mais ainda. Quando o insumo fica caro, o erro mais comum é cortar o que sustenta o ticket médio — comunicação e experiência — justamente quando o cliente mais precisa entender por que aquele corte vale o preço. Restaurante que compete só por preço perde para quem compete por margem de arroba mais apertada; steakhouse que compete por experiência protege a margem.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Meu cliente vai aceitar reajuste no cardápio?<span class="chev">+</span></button>
+        <div class="faq-a"><p>O setor inteiro reajustou: a alimentação fora do lar subiu 6,97% em 2025, acima do IPCA geral. O cliente já espera isso. O que ele não aceita é reajuste sem justificativa perceptível — daí a importância de comunicar valor (origem do corte, preparo, ritual) antes e durante o aumento, não só mudar o número no cardápio.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Como me diferencio de churrascaria de buffet e self-service?<span class="chev">+</span></button>
+        <div class="faq-a"><p>Eles competem por quilo; você compete por ocasião. O dado mais recente do setor mostra o consumidor reduzindo frequência, mas elevando expectativa quando decide sair — é o público exato de uma steakhouse posicionada como experiência, não como refeição.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Ano de eleição atrapalha o consumo do meu restaurante?<span class="chev">+</span></button>
+        <div class="faq-a"><p>Historicamente, não da forma que atrapalha B2B. Anos eleitorais costumam vir com mais gasto público e mais dinheiro circulando na base da pirâmide — o que, segundo a própria Abrasel, tende a favorecer o setor. O ruído fica na política, não costuma esvaziar mesa.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="diagnostico">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Diagnóstico de prontidão comercial</span>
+      <h2>Sua steakhouse está pronta para proteger a margem no 2º semestre?</h2>
+      <p>Seis perguntas, trinta segundos. Marque só o que já está funcionando <strong>hoje</strong> — não o que está no plano.</p>
+    </div>
+    <div class="check-list reveal" id="checkList">
+      <label class="check-item"><input type="checkbox"><span><strong>Posicionamento:</strong> minha comunicação explica claramente por que meu corte vale o preço — eu não compito com buffet por quilo.</span></label>
+      <label class="check-item"><input type="checkbox"><span><strong>Posicionamento:</strong> sei exatamente quem é meu cliente ideal e minha comunicação fala direto com ele, não com "todo mundo".</span></label>
+      <label class="check-item"><input type="checkbox"><span><strong>Presença:</strong> minhas redes sociais têm conteúdo estratégico e consistente — não só "postzinho" quando sobra tempo.</span></label>
+      <label class="check-item"><input type="checkbox"><span><strong>Presença:</strong> meus materiais físicos (cardápio, totens, sinalização) estão alinhados com a identidade da marca.</span></label>
+      <label class="check-item"><input type="checkbox"><span><strong>Ativação:</strong> já rodei campanha para as datas de alta temporada deste ano (Dia dos Pais, Namorados, virada de ano).</span></label>
+      <label class="check-item"><input type="checkbox"><span><strong>Ativação:</strong> tenho ação comercial ativa para eventos e grupos corporativos — não só espero o cliente de rua.</span></label>
+    </div>
+    <div class="diag-result reveal" aria-live="polite">
+      <div class="diag-score" id="diagScore">Marque os itens acima</div>
+      <div class="diag-meter"><div id="diagBar"></div></div>
+      <p id="diagMsg">O resultado aparece aqui conforme você marca.</p>
+    </div>
+  </div>
+</section>
+
+<div id="acao">
+  <div class="wrap">
+    <div class="cta reveal">
+      <h2>A arroba não vai parar de subir. <em>A pergunta é quem protege a margem com estratégia.</em></h2>
+      <p>Fizemos isso com o Sartoni: conteúdo online + offline integrados, virando ritual de consumo. Resultado: mais de R$1 milhão em vendas ao longo da parceria, ~R$100 mil em vendas num único dia de semana como média mensal recorrente, e 30% de crescimento no faturamento em um ano. É o mesmo raciocínio que aplicamos em qualquer steakhouse que queira competir por experiência, não por preço.</p>
+      <div class="proof">
+        <div class="proof-cell"><div class="proof-num">R$1M+</div><div class="proof-cap">em vendas geradas — case Sartoni</div></div>
+        <div class="proof-cell"><div class="proof-num">+30%</div><div class="proof-cap">de crescimento no faturamento em 1 ano</div></div>
+        <div class="proof-cell"><div class="proof-num">2 → 5</div><div class="proof-cap">unidades na expansão do Estação Fogo Baixo</div></div>
+      </div>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="https://wa.me/5532991384464?text=Li%20o%20boletim%20de%20steakhouses%20e%20quero%20proteger%20minha%20margem%20no%202%C2%BA%20semestre" target="_blank" rel="noopener">Quero estruturar meu 2º semestre</a>
+        <a class="btn btn-ghost" href="#topo">Reler o boletim</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <a class="foot-logo" href="#topo">nyssa<em>✦</em></a>
+    <p>Comunicação que é estratégia, não só estética. Posicionamento, presença multicanal e ativação comercial para marcas que querem virar referência — inclusive na mesa de jantar. Estudo desenvolvido com dados públicos.</p>
+    <div class="foot-bottom">
+      FONTES: CEPEA/ESALQ (Indicador do Boi Gordo) · Pecuaria.com.br / Datagro (cotações por praça) · Notícias Agrícolas e Canal Rural (projeções 2º semestre 2026) · Abrasel &amp; FGV (Pesquisa de Conjuntura dez/2025, Índice de Confiança Empresarial) · IBGE (PNAD, IPCA) · Instituto Foodservice Brasil.<br>
+      © 2026 Nyssa · Boletim independente · Atualizado em julho de 2026 · #efeitonyssa
+    </div>
+  </div>
+</footer>
+
+<button class="fab-top" id="fabTop" aria-label="Voltar ao início">↑</button>
+
+<script>
+// reveal on scroll
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+// progress bar
+const prog=document.getElementById('prog');
+window.addEventListener('scroll',()=>{
+  const st=document.documentElement.scrollTop;
+  const max=document.documentElement.scrollHeight-window.innerHeight;
+  prog.style.width=(max>0?st/max*100:0)+'%';
+},{passive:true});
+
+// nav active state
+const navAs=document.querySelectorAll('.nav-links a[href^="#"]');
+const secs=[...document.querySelectorAll('section[id]')];
+const spy=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){navAs.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+e.target.id))}}),{rootMargin:'-30% 0px -60% 0px'});
+secs.forEach(s=>spy.observe(s));
+
+// calendar tabs
+const meses=[
+  {status:'RESSACA DE ATENÇÃO',cor:'#7A7263',titulo:'Julho e agosto: a Copa acaba, a agenda reabre',
+   texto:'Com o torneio indo até 19 de julho, o jantar de ocasião fica em compasso de espera — mas bares e telões seguem aquecidos em dias de jogo. Erro comum: recolher o comercial no período. O certo é planejar agora a campanha que estreia quando a atenção volta inteira, em agosto.',
+   acao:'Prospecção leve e planejamento de campanha: monte agora o que vai rodar em agosto.'},
+  {status:'JANELA DE FERIADOS',cor:'#C1421C',titulo:'Setembro e outubro: feriados emendáveis e eleição no ar',
+   texto:'2026 tem nove feriados nacionais e dez pontos facultativos, a maioria emendável — isso significa mais viagens, mais encontros, mais ocasião para sair. As eleições geram ruído na mídia, mas historicamente vêm com mais gasto público na base da pirâmide, o que tende a favorecer consumo, não travar.',
+   acao:'Campanhas para cada feriado prolongado + comunicação que não depende de decisão política do cliente.'},
+  {status:'AQUECIMENTO',cor:'#B8923D',titulo:'Novembro: o cliente começa a planejar a confraternização',
+   texto:'Empresas e grupos começam a fechar datas de confraternização de fim de ano. Quem não tem ação comercial ativa para eventos corporativos perde a reserva para quem já está com a agenda de grupos aberta desde outubro.',
+   acao:'Ativação comercial para grupos e eventos: contato direto com RH e organizadores de confraternização.'},
+  {status:'PICO DO ANO',cor:'#17130F',titulo:'Dezembro: o trimestre inteiro se paga aqui',
+   texto:'Confraternizações, virada de ano e o maior ticket médio do calendário. É o mês que revela se a estratégia dos meses anteriores funcionou: quem construiu posicionamento e presença desde julho colhe a reserva cheia; quem não construiu, compete por mesa vazia com desconto.',
+   acao:'Execução impecável + reserva antecipada: toda comunicação de novembro converte em mesa ocupada aqui.'}
+];
+const calPanel=document.getElementById('calPanel');
+const calBtns=document.querySelectorAll('.cal-btn');
+function renderCal(i){
+  const m=meses[i];
+  calPanel.style.opacity='0';
+  setTimeout(()=>{
+    calPanel.innerHTML=`<span class="status" style="background:${m.cor}">${m.status}</span><h4>${m.titulo}</h4><p>${m.texto}</p><div class="acao"><b>Movimento recomendado</b>${m.acao}</div>`;
+    calPanel.style.opacity='1';
+  },150);
+  calBtns.forEach((b,j)=>b.setAttribute('aria-selected',j===i?'true':'false'));
+}
+calBtns.forEach(b=>b.addEventListener('click',()=>renderCal(+b.dataset.m)));
+renderCal(0);
+
+// price slider
+const priceData=[
+  {val:'R$332',cap:'média real da arroba · CEPEA/ESALQ',varr:'base',msg:'Janeiro de 2026: a arroba real estava em R$332,14. Ponto de partida do ano — cardápio ainda calibrado para esse custo.'},
+  {val:'R$366',cap:'pico real do semestre · abril/2026',varr:'+10,2%',msg:'Abril foi o pico: R$365,93 em termos reais, puxado pela transição de safra de capim para entressafra. Quem não repensou o cardápio nesse mês já operou abril com margem menor.'},
+  {val:'R$348',cap:'fechamento do 1º semestre · junho/2026',varr:'+4,6%',msg:'Junho fechou em R$347,59 — alta real de 4,6% sobre janeiro. É a média que 32% dos donos de restaurante ainda não conseguiram repassar ao cliente.'},
+  {val:'R$370–400',cap:'projeção de analistas para o 2º semestre',varr:'+11 a 20%',msg:'Oferta mais restrita, exportação recorde e ano eleitoral sustentam a expectativa de alta para o 2º semestre. Cardápio, ficha técnica e comunicação de valor precisam estar prontos antes disso acontecer — não depois.'}
+];
+const pRange=document.getElementById('priceRange');
+const pVal=document.getElementById('priceVal');
+const pCap=document.getElementById('priceCap');
+const pVar=document.getElementById('priceVar');
+const pMsg=document.getElementById('priceMsg');
+const pStops=document.querySelectorAll('#priceStops span');
+function renderPrice(){
+  const d=priceData[+pRange.value];
+  pVal.style.opacity='0';pVar.style.opacity='0';
+  setTimeout(()=>{
+    pVal.textContent=d.val;pCap.textContent=d.cap;pVar.textContent=d.varr;pMsg.textContent=d.msg;
+    pVal.style.opacity='1';pVar.style.opacity='1';
+  },110);
+  pStops.forEach((s,i)=>s.classList.toggle('on',i===+pRange.value));
+}
+pRange.addEventListener('input',renderPrice);
+renderPrice();
+
+// faq accordion
+document.querySelectorAll('.faq-item').forEach(item=>{
+  const q=item.querySelector('.faq-q'),a=item.querySelector('.faq-a');
+  q.addEventListener('click',()=>{
+    const open=item.classList.toggle('open');
+    q.setAttribute('aria-expanded',open);
+    a.style.maxHeight=open?a.scrollHeight+'px':'0';
+    q.querySelector('.chev').textContent=open?'-':'+';
+  });
+});
+
+// diagnostic
+const checks=document.querySelectorAll('#checkList input');
+const dScore=document.getElementById('diagScore');
+const dBar=document.getElementById('diagBar');
+const dMsg=document.getElementById('diagMsg');
+const niveis=[
+  {min:0,max:1,t:'Operação exposta ao <em>custo</em>',m:'Sem posicionamento, presença e ativação rodando, cada alta da arroba vira desconto forçado. A boa notícia: dá tempo de estruturar antes do pico de dezembro — mas o relógio já está correndo.'},
+  {min:2,max:3,t:'Base existe, <em>falta ativar</em>',m:'Você tem peças soltas, mas não um sistema. Enquanto isso, quem já roda posicionamento + presença + ativação de forma integrada está absorvendo a alta de custo sem perder margem.'},
+  {min:4,max:5,t:'Quase pronto. <em>Falta afinar</em>',m:'Sua operação está acima da média do setor. O que falta é exatamente o que separa quem sobrevive à alta da arroba de quem lucra apesar dela: consistência entre posicionamento, presença e ativação comercial.'},
+  {min:6,max:6,t:'Pronta para o <em>2º semestre</em>',m:'Estrutura completa. Agora é escala: mais volume de conteúdo, mais ativação para grupos e eventos, e comunicação de valor calibrada para sustentar o reajuste que o mercado já está fazendo. Se quiser um parceiro para acelerar isso, vale a conversa.'}
+];
+function renderDiag(){
+  const n=[...checks].filter(c=>c.checked).length;
+  const nivel=niveis.find(v=>n>=v.min&&n<=v.max);
+  dScore.innerHTML=`${n}/6 · ${nivel.t}`;
+  dBar.style.width=(n/6*100)+'%';
+  dMsg.textContent=nivel.m;
+}
+checks.forEach(c=>c.addEventListener('change',renderDiag));
+
+// back to top
+const fab=document.getElementById('fabTop');
+window.addEventListener('scroll',()=>{fab.classList.toggle('show',window.scrollY>500)},{passive:true});
+fab.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+</script>
+</body>
+</html>
